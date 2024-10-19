@@ -2,6 +2,8 @@
 Implementation of the famous Game of Life from John Conway in RISC-V assembly language
 This project is the result of a 5-week long work done for the lab of CS-200 (Computer Architecture) at EPFL.
 
+![Screenshot from 2024-10-19 23-14-42](https://github.com/user-attachments/assets/c2228e8d-68a3-4b95-912a-27b9d4189b23)
+
 ## RISC-V
 RISC-V (Reduced Instruction Set Computer - V) is an open standard instruction set architecture (ISA) based on the RISC principles. It is designed to be simple, modular, and extensible, allowing for a wide range of uses, from small embedded systems to powerful supercomputers. RISC-V assembly language is the low-level, human-readable form of programming for CPUs that use the RISC-V architecture.
 Unlike proprietary architectures (e.g., x86, ARM), RISC-V is an open standard, allowing free and unrestricted use. RISC-V is gaining popularity due to its openness, flexibility, and growing community of developers and researchers.
@@ -30,6 +32,9 @@ alive or dead. At each time step, the game evolves following this set of rules:
 - Overpopulation: any living cell dies if it has (strictly) more than three live neighbours.
 - Reproduction: any dead cell becomes alive if it has exactly three live neighbours.
 - Stasis: Any live cell remains alive if it has two or three live neighbours.
+
+![image](https://github.com/user-attachments/assets/4d120b1b-8cbc-421c-8dae-fc307d7345a3)
+
 
 ## Controls 
 Control extensions are the procedures allowing the user to setup the game parameters, change them
