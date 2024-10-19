@@ -44,7 +44,7 @@ random seed.
 - RUN: In this state, the game runs and the user has a few possibilities to change the way the game
 runs.
 
-### INIT state
+#### INIT state
 The button mapping is the following:
 • jc: By pushing jc, the user will go through the predefined seeds, one after the other. N seed and
 mask pairs are available. By default, seed 0 is displayed, and if the game is launched from this
@@ -56,13 +56,13 @@ configuring the last three digits of the LCD display. The first digit can be ini
 while button 0 configures the units, button 1 the tens, and button 2 the hundreds. The
 number of steps the game will run is in hexadecimal.
 
-### RAND state
+#### RAND state
 In this state, the button mapping is the following:
 • jc: Pushing it again triggers the generation of a new random game state.
 • jr: Starts the game from the selected random game state for the amount of steps selected.
 • button 0-1-2: Same as in the INIT state
 
-### RUN state
+#### RUN state
 In this state, the button mapping is the following:
 • jc is the start/pause button. If pressed, the game toggles between play and pause.
 • jr increases the speed of the game.
