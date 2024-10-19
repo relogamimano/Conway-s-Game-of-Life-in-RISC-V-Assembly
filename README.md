@@ -1,6 +1,7 @@
 # Conway-s-Game-of-Life-in-RISC-V-Assembly
 Implementation of the famous Game of Life from John Conway in RISC-V assembly language
 This project is the result of a 5-week long work done for the lab of CS-200 (Computer Architecture) at EPFL.
+This program is initially meant to be run on a Gecko5 board. However, a few vscode extensions allows us to simulate the board as shown below.
 
 ![Screenshot from 2024-10-19 23-14-42](https://github.com/user-attachments/assets/c2228e8d-68a3-4b95-912a-27b9d4189b23)
 
@@ -9,10 +10,9 @@ RISC-V (Reduced Instruction Set Computer - V) is an open standard instruction se
 Unlike proprietary architectures (e.g., x86, ARM), RISC-V is an open standard, allowing free and unrestricted use. RISC-V is gaining popularity due to its openness, flexibility, and growing community of developers and researchers.
 That is why I made the best use of it for this project.
 
-This program is initially meant to be run on a Gecko5 board. However, a few vscode extensions allows us to simulate the board.
 ## Requirements and installation
 ### Extensions
-The following vscode extensions are necessary to run and visualize the program.
+In absence of a gecko5 board, the following vscode extensions allow us to run and visualize the program.
 - Verilog-HDL/SystemVerilog/Bluespec SystemVerilog for Verilog/SystemVerilog support.
 - RISC-V Support for RISC-V assembly support.
 - cs200 for visualizing RTL simulation and RISC-V emulation for this course.
