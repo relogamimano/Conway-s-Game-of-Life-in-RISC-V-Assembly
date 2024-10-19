@@ -35,6 +35,15 @@ alive or dead. At each time step, the game evolves following this set of rules:
 
 ![image](https://github.com/user-attachments/assets/4d120b1b-8cbc-421c-8dae-fc307d7345a3)
 
+## Display
+The game display is a LED array of 10×12 pixels. The game display is a torus, which means that two cells (x1, y1) and (x2, y2) are
+considered neighbours if one of the following conditions is satisfied (symbol == stands for equality):
+- (x1 +/- 1 mod 12, y1 +/- 1 mod 10) == (x2, y2)
+- (x1 mod 12, y1 +/- 1 mod 10) == (x2, y2)
+- (x1 +/- 1 mod 12, y1 mod 10) == (x2, y2)
+
+Those properties result in the grid plan being the surface of a globe. Indeed, if a cell is on the bottom edge of the grid, it is neighbour with 2 or 3 cells on the upper edge of the grid.
+Hence the modulo applied to a neighbour's coordinate.
 
 ## Controls 
 Control extensions are the procedures allowing the user to setup the game parameters, change them
